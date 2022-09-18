@@ -144,3 +144,31 @@ Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
 
 Pour **enregistrer et quitter Vim**, Faites d'abord **echap**, puis tapez **:wq**.
 
+### Battle begin's !
+
+Mettons en pratique les commandes vu précédement.
+
+Q1: Dans votre *home*, faites un dossier *tp_01*
+
+<details>
+    <summary>Solution Q1</summary>
+    
+    mkdir ~/tp_01
+
+</details>
+
+---
+Q2: Toujours depuis votre *home*, faites un fichier **super_config.txt** avec comme contenu **"hello world"** dans le repertoire **tp_01**
+
+<details>
+    <summary>Solution Q2</summary>
+    
+    touch ~/tp_01/super_config.txt
+    vim ~/tp_01/super_config.txt
+
+</details>
+
+---
+
+## Permission denied
+
