@@ -1,6 +1,7 @@
 # TP 01 - Linux
 ## Prérequis
 Pour la réalisation de ce TP, il vous faut un client SSH:
+
 * [Putty](https://www.putty.org/)
 * [mRemote](https://mremoteng.org/download)
 
@@ -22,7 +23,7 @@ Exemple avec Putty:
 
 ![Image 2](https://github.com/fguillemette-pro/Formation-Linux/blob/2e99f727c68cc41d0d9a9bfb86e1c3b855d4fe43/TP_1/img/img2.png?raw=true)
 
-⚡ Les informations de connexions vous seront transmis le jour de la fomation.
+> Les informations de connexions vous seront transmis le jour de la fomation.
 
 ## Welcome to the machine
 
@@ -43,7 +44,7 @@ pwd
 
 > **pwd** affiche votre répertoire courant ou répertoire de travail (path working directory).
 
-Pour lister les fichiers, tapez la commande:
+Pour lister les fichiers et les repertoires, tapez la commande:
 ```
 ls
 ```
@@ -82,9 +83,9 @@ Exemple:
 cd /etc/
 ```
 
-Si vous faites un **pwd**, vous n'êtes plus dans votre *home*.
+Si vous faites un **pwd**, vous n'êtes plus dans votre *home* mais dans */etc/*.
 
-### Les fichiers
+### Les fichiers et répertoires
 
 Il existe de nombreux outils pour lire et éditer les fichiers sous Linux.
 
@@ -100,7 +101,7 @@ Exemple:
 cat /var/log/dnf.log
 ```
 
-La commande **cat** affiche le contenu du fichier directement sur dans le terminal.
+La commande **cat** affiche le contenu du fichier directement dans le terminal.
 
 Il existe la commande **less** qui permet de "naviger" dans le fichier de manière plus simple.
 
@@ -155,9 +156,23 @@ Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
 
 Pour **enregistrer et quitter Vim**, Faites d'abord **echap**, puis tapez **:wq**.
 
-### Battle begin's !
+### La suppression
 
-Mettons en pratique les commandes vu précédement.
+Une commande bien dangereuse est la commande **rm**, elle efface dossiers et fichiers:
+
+Pour un fichier:
+```
+rm ~/hello_world.txt
+```
+
+Pour un repertoire:
+```
+rm -r ~/nouveau_dossier
+```
+
+### Challenge me !
+
+Mettons en pratique les commandes vu précédement:
 
 Q1: Dans votre *home*, faites un dossier *tp_01*
 
@@ -169,7 +184,7 @@ Q1: Dans votre *home*, faites un dossier *tp_01*
 </details>
 
 ---
-Q2: Toujours depuis votre *home*, faites un fichier **super_config.txt** avec comme contenu **"hello world"** dans le repertoire **tp_01**
+Q2: Toujours depuis votre *home*, faites un fichier **super_config.txt** avec comme contenu **"hello world"** dans le repertoire *tp_01*
 
 <details>
     <summary>Solution Q2</summary>
@@ -181,5 +196,15 @@ Q2: Toujours depuis votre *home*, faites un fichier **super_config.txt** avec co
 
 ---
 
+Q3: Supprimez le repertoire *tp_01* en une commande
+
+<details>
+    <summary>Solution Q3</summary>
+    
+    rm -r tp_01
+
+</details>
+
+---
 ## Permission denied
 
