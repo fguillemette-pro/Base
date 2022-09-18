@@ -38,3 +38,20 @@ Pour connaitre votre emplacement dans l'arborescence, tapez la commande suivante
 ```
 pwd
 ```
+
+Pour lister les fichiers, tapez la commande:
+```
+ls
+```
+
+Cette commande peut se combiner avec des options comme -a, comme ceci:
+```
+ls -al
+```
+
+Pour retrouver toutes les options possibles, vous pouvez utiliser cette commande avec man:
+
+```
+man ls
+```
+Pour quitter le manuel, tapez **q**
