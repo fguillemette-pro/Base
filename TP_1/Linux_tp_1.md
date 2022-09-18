@@ -1,10 +1,10 @@
 # TP 01 - Linux
 ## Prérequis
 Pour la réalisation de ce TP, il vous faut un client SSH:
-* Putty
-* mRemote
+* [Putty](https://www.putty.org/)
+* [mRemote](https://mremoteng.org/download)
 
-Assurez-vous d'avoir une connexion à internet non filtrée (dans le cas ou vous faites le tp depuis le poste de votre client)
+Assurez-vous d'avoir une connexion à internet non filtrée (dans le cas ou vous faites le TP depuis le poste de votre client)
 
 ## Initalisation
 
