@@ -132,6 +132,17 @@ touch ~/hello_world.txt
 
 > Le **~** remplace le chemin de votre *home* (/home/user)
 
+La création de répertoire est très similaire à la création de fichier:
+
+```
+mkdir /chemin/du/dossier
+```
+Exemple:
+```
+mkdir ~/nouveau_dossier
+```
+> Utilisez l'option -p pour créer les dossiers de votre répertoire.
+
 ### VIM
 
 Vim est un éditeur de fichier qui à lui tout seul pourrait faire l'objet d'un cour de 6h, donc nous irons à l'essentiel.
