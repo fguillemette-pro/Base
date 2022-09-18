@@ -48,18 +48,18 @@ Pour lister les fichiers, tapez la commande:
 ls
 ```
 
-Cette commande peut se combiner avec des options comme -a, comme ceci:
+Cette commande peut se combiner avec des options comme -al (-a + -l), comme ceci:
 ```
 ls -al
 ```
-> La commande **ls -al** affiche les fichiers et dossiers **cachés** et **des informations supplémentaires** dans le répertoire courant
+> La commande **ls -al** affiche les fichiers et dossiers **cachés** et **des informations supplémentaires** dans le répertoire courant.
 
 Vous pouvez préciser le répertoire ou la commande s'execute, par exemple:
 
 ```
 ls -al /etc/
 ```
-> La commande **ls** s'execute dans le répertoire **/etc/** avec **les options -al**
+> La commande **ls** s'execute dans le répertoire **/etc/** avec **les options -al**.
 
 
 Pour retrouver toutes les options possibles, vous pouvez utiliser cette commande avec man:
@@ -143,6 +143,4 @@ vim ~/config.txt
 Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
 
 Pour **enregistrer et quitter Vim**, Faites d'abord **echap**, puis tapez **:wq**.
-
-
 
