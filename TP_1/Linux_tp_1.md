@@ -2,7 +2,7 @@
 ## Prérequis
 Pour la réalisation de ce TP, il vous faut un client SSH:
 * Putty
-* SuperPutty
+* mRemote
 
 Assurez-vous d'avoir une connexion à internet non filtrée (dans le cas ou vous faites le tp depuis le poste de votre client)
 
@@ -18,7 +18,11 @@ Il est possible, en fonction du client SSH que vous utilisez, que le numéros de
 
 Exemple avec Putty:
 
-[Insertion screenshots]
+![Image 1](https://github.com/fguillemette-pro/Formation-Linux/blob/2e99f727c68cc41d0d9a9bfb86e1c3b855d4fe43/TP_1/img/img1.png?raw=true)
+
+![Image 2](https://github.com/fguillemette-pro/Formation-Linux/blob/2e99f727c68cc41d0d9a9bfb86e1c3b855d4fe43/TP_1/img/img2.png?raw=true)
+
+⚡ Les informations de connexions vous seront transmis le jour de la fomation.
 
 ## Into the machine
 
@@ -29,3 +33,8 @@ Le *home* est votre espace personnel. Il se situe dans:
 /home/[votre login]
 ```
 
+Pour connaitre votre emplacement dans l'arborescence, tapez la commande suivante:
+
+```
+pwd
+```
