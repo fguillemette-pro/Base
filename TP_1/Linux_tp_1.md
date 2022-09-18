@@ -24,9 +24,9 @@ Exemple avec Putty:
 
 ⚡ Les informations de connexions vous seront transmis le jour de la fomation.
 
-## Into the machine
+## Welcome to the machine
 
-Par défaut, le répertoire affiché sera votre *home*.
+Par défaut, le répertoire utilisé sera votre *home*.
 
 Le *home* est votre espace personnel. Il se situe dans:
 ```
