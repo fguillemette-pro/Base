@@ -26,6 +26,8 @@ Exemple avec Putty:
 
 ## Welcome to the machine
 
+### L'arborescence 1/2
+
 Par défaut, le répertoire utilisé sera votre *home*.
 
 Le *home* est votre espace personnel. Il se situe dans:
@@ -39,7 +41,7 @@ Pour connaitre votre emplacement dans l'arborescence, tapez la commande suivante
 pwd
 ```
 
-> **pwd** affiche votre répertoire courant ou répertoire de travail (path working directory) 
+> **pwd** affiche votre répertoire courant ou répertoire de travail (path working directory).
 
 Pour lister les fichiers, tapez la commande:
 ```
@@ -81,4 +83,66 @@ cd /etc/
 ```
 
 Si vous faites un **pwd**, vous n'êtes plus dans votre *home*.
+
+### Les fichiers
+
+Il existe de nombreux outils pour lire et éditer les fichiers sous Linux.
+
+la commande la plus simple pour lire un fichier est la commande **cat**:
+
+```
+cat /chemin/du/fichier
+```
+
+Exemple:
+
+```
+cat /var/log/dnf.log
+```
+
+La commande **cat** affiche le contenu du fichier directement sur dans le terminal.
+
+Il existe la commande **less** qui permet de "naviger" dans le fichier de manière plus simple.
+
+```
+less /var/log/dnf.log
+```
+
+> Pour quitter **less**, tapez **q**. 
+
+> Pour faire des recherches dans votre fichier, tapez **/** puis **votre expression** dans **less**
+
+Vous pouvez lire des fichiers cachés (tant que vous avez les permissions):
+
+```
+cat /.top_secret/primes_2022.txt
+```
+
+Pour créer un fichier, la commande **touch** sera votre amie:
+
+```
+touch /chemin/de/votre/fichier
+```
+
+Exemple:
+
+```
+touch ~/hello_world.txt
+```
+
+> Le **~** remplace le chemin de votre *home* (/home/user)
+
+### VIM
+
+Vim est un éditeur de fichier qui à lui tout seul pourrait faire l'objet d'un cour de 6h, donc nous irons à l'essentiel.
+
+Pour ouvrir un fichier sous vim:
+```
+vim ~/config.txt
+```
+Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
+
+Pour **enregistrer et quitter Vim**, Faites d'abord **echap**, puis tapez **:wq**.
+
+
 
