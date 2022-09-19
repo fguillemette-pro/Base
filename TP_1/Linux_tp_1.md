@@ -208,3 +208,74 @@ Q3: Supprimez le repertoire *tp_01* en une commande
 ---
 ## Permission denied
 
+### Chmod
+
+Pour cette partie, vous allez faire un fichier **config.txt** dans */tmp*
+
+```
+touch /tmp/config.txt
+```
+> Le dossier */tmp* est un repertoire temporaire qui sera vidé à chaque redémarrage de la machine.
+
+Si vous faites un **ls -l** dans le repertoire, vous aurez ceci:
+```
+[etudiant@s1-2-sbg5 tmp]$ ls -l
+total 0
+-rw-rw-r--. 1 etudiant etudiant  0 Sep 19 16:31 config.txt
+drwx------. 3 root     root     17 Sep 19 16:27 systemd-private-884f34e99f9949fdbd015524b4dda1b2-chronyd.service-AaqNkh
+```
+Votre fichier config.txt a les droits: `-rw-rw-r--`
+
+Le propriétaire du fichier a les droits de lecture et écriture (mais pas le droit d'execution).
+
+Le groupe du fichier a les droits de lecture et écriture (mais pas le droit d'execution).
+
+Les autres (utilisateurs) du fichier a le droit de lecture (mais pas les droits d'écriture ou d'execution).
+
+> Voici [un calculateur](https://chmod-calculator.com/) pour comprendre "graphiquement" le calcul.
+
+Pour vous donnez le droit d'execution, faites la commande suivante:
+
+```
+chmod u+x /tmp/config.txt
+```
+> **u** correspond au **U**ser, **+** à **l'affectation** et **x** au droit d'**eXecution**
+
+OU
+
+```
+chmod 764 /tmp/config.txt
+```
+
+Voici un résumé des droits sous Linux:
+
+![Tableau droits linux](https://d33wubrfki0l68.cloudfront.net/794f22a6b63c1c7ad76636b195b85b3192b09f71/39aa9/assets/images/linux/lucidchart/d4e99828-d7bb-40ae-9c7e-f145c47350fc.png)
+
+Pour la suite de l'exercice, je vous donne accès à trois utilisateurs:
+
+* asterix
+* obelix
+* cesar
+
+Le mot de passe est " Uderzo! " pour les trois comptes.
+
+asterix et obelix font partie du même groupe: gaulois
+
+cesar a son propre groupe: romain
+
+Pour connaitre le groupe d'un d'utilisateur:
+
+```
+groups <user>
+```
+> A noter qu'un utilisateur a son propre groupe (du même nom).
+
+Pour passer d'un utilsateur à un autre, tapez:
+
+```
+su <login>
+```
+Pour fermer la session:
+```
+exit
+```
