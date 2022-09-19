@@ -27,7 +27,7 @@ Exemple avec Putty:
 
 ## Welcome to the machine
 
-### L'arborescence 1/2
+### L'arborescence
 
 Par défaut, le répertoire utilisé sera votre *home*.
 
@@ -144,7 +144,7 @@ mkdir ~/nouveau_dossier
 ```
 > Utilisez l'option -p pour créer les dossiers de votre répertoire.
 
-### VIM
+### Vim
 
 Vim est un éditeur de fichier qui à lui tout seul pourrait faire l'objet d'un cour de 6h, donc nous irons à l'essentiel.
 
