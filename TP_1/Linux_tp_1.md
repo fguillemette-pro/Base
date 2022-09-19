@@ -251,6 +251,8 @@ Voici un résumé des droits sous Linux:
 
 ![Tableau droits linux](https://d33wubrfki0l68.cloudfront.net/794f22a6b63c1c7ad76636b195b85b3192b09f71/39aa9/assets/images/linux/lucidchart/d4e99828-d7bb-40ae-9c7e-f145c47350fc.png)
 
+### Les utisateurs et les groupes
+
 Pour la suite de l'exercice, je vous donne accès à trois utilisateurs:
 
 * asterix
