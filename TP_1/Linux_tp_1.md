@@ -18,10 +18,13 @@ Pour vous connecter sur votre machine, il vous faut 3 élements:
 Il est possible, en fonction du client SSH que vous utilisez, que le numéros de port vous soit demandé. Par défaut, le service SSH s'execute sur le port 22.
 
 Exemple avec Putty:
+<center>
 
 ![Image 1](https://github.com/fguillemette-pro/Formation-Linux/blob/2e99f727c68cc41d0d9a9bfb86e1c3b855d4fe43/TP_1/img/img1.png?raw=true)
 
 ![Image 2](https://github.com/fguillemette-pro/Formation-Linux/blob/2e99f727c68cc41d0d9a9bfb86e1c3b855d4fe43/TP_1/img/img2.png?raw=true)
+
+</center>
 
 > Les informations de connexions vous seront transmis le jour de la fomation.
 
@@ -249,7 +252,11 @@ chmod 764 /tmp/config.txt
 
 Voici un résumé des droits sous Linux:
 
+<center>
+
 ![Tableau droits linux](https://d33wubrfki0l68.cloudfront.net/794f22a6b63c1c7ad76636b195b85b3192b09f71/39aa9/assets/images/linux/lucidchart/d4e99828-d7bb-40ae-9c7e-f145c47350fc.png)
+
+</center>
 
 ### Les utisateurs et les groupes
 
@@ -280,4 +287,30 @@ su <login>
 Pour fermer la session:
 ```
 exit
+```
+### Sudo
+
+Dans le cadre de ce TP, je vous donne les droits administrateurs.
+
+Il existe un utilitaire pour donner les droits devenir root.
+
+> Le compte **root** est le compte administrateur sur une machine linux, nous allons voir ça dans la prochaine session.
+
+Pour utiliser une commande qui nécéssite les droits root:
+```
+sudo <commande>
+```
+<center>
+
+![spider advice](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLN0EDUm93wnBo6vB9MAwJewL0pm2MiANWw&usqp=CAU)
+
+</center>
+
+### Creation d'utilisateur
+
+Dans chaque village Gaulois, il y a un chef: abraracourcix
+
+Nous allons donc créé abraracourcix:
+```
+sudo adduser
 ```
