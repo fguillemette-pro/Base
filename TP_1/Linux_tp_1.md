@@ -15,7 +15,7 @@ Pour vous connecter sur votre machine, il vous faut 3 éléments:
 * Le nom d'utilisateur (login)
 * Le mot de passe (password)
 
-Il est possible, en fonction du client SSH que vous utilisez, que le numéros de port vous soit demandé. Par défaut, le service SSH s'execute sur le port 22.
+Il est possible, en fonction du client SSH que vous utilisez, que le numéro de port vous soit demandé. Par défaut, le service SSH s'exécute sur le port 22.
 
 Exemple avec Putty:
 <center>
@@ -26,7 +26,7 @@ Exemple avec Putty:
 
 </center>
 
-> Les informations de connexions vous seront transmis le jour de la fomation.
+> Les informations de connexions vous seront transmises le jour de la formation.
 
 ## Welcome to the machine
 
@@ -35,6 +35,7 @@ Exemple avec Putty:
 Par défaut, le répertoire utilisé sera votre *home*.
 
 Le *home* est votre espace personnel. Il se situe dans:
+
 ```
 /home/[votre login]
 ```
@@ -48,11 +49,13 @@ pwd
 > **pwd** affiche votre répertoire courant ou répertoire de travail (path working directory).
 
 Pour lister les fichiers et les repertoires, tapez la commande:
+
 ```
 ls
 ```
 
 Cette commande peut se combiner avec des options comme -al (-a + -l), comme ceci:
+
 ```
 ls -al
 ```
@@ -76,6 +79,7 @@ Pour quitter le manuel, tapez **q**.
 La commande **man** fonctionne avec toutes les autres commandes du système, abusez de cette commande, elle sera la meilleur source de vérité à votre disposition !
 
 Pour vous déplacer dans l'arborescence, utiliser la commande:
+
 ```
 cd [votre chemin]
 ``` 
