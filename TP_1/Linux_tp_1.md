@@ -179,7 +179,7 @@ rm -r ~/nouveau_dossier
 
 ### Challenge me !
 
-Mettons en pratique les commandes vu précédement:
+Mettons en pratique les commandes vues précédemment:
 
 Q1: Dans votre *home*, faites un dossier *tp_01*
 
@@ -364,10 +364,6 @@ Puis pour affecter les droits:
 sudo chown cesar /gaule/camp
 ```
 
-```
-sudo chown panoramix /gaule/foret
-```
-
 > La commande chown change le propriétaire du fichier/dossier !
 
 On le fait avec un groupe:
@@ -375,6 +371,43 @@ On le fait avec un groupe:
 ```
 sudo chgrp gaulois /gaule/village
 ```
+
+```
+sudo chgrp druide /gaule/foret
+```
+
 > Attention, si les gaulois veulent écrire des fichiers dans leur espace, il faut donner les droits d'écritures !
 
 Si vous faites **ls -l /gaule**, vous voyez que les propriétaires et groupes ont changé.
+
+### Challenge me !
+
+Mettons en pratique les commandes vues précédemment:
+
+Q4: Je veux un utilisateur idefix
+
+<details>
+    <summary>Solution Q4</summary>
+    
+    sudo adduser idefix
+
+</details>
+
+Q5: Je veux qu'idefix puisse aller dans la forêt
+
+<details>
+    <summary>Solution Q5</summary>
+    
+    sudo chown idefix /gaule/foret
+
+</details>
+
+Q6: Je veux interdire l'accès à tout le monde à mon camp romain sauf à César
+
+<details>
+    <summary>Solution Q6</summary>
+    
+    sudo chmod go-rwx /gaule/camp
+
+</details>
+
