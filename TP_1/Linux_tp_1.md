@@ -7,9 +7,9 @@ Pour la réalisation de ce TP, il vous faut un client SSH:
 
 Assurez-vous d'avoir une connexion à internet non filtrée (dans le cas ou vous faites le TP depuis le poste de votre client)
 
-## Initalisation
+## Initialisation
 
-Pour vous connecter sur votre machine, il vous faut 3 élements:
+Pour vous connecter sur votre machine, il vous faut 3 éléments:
 
 * Le nom de la machine (hostname)
 * Le nom d'utilisateur (login)
