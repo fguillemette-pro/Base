@@ -76,7 +76,7 @@ man ls
 ```
 Pour quitter le manuel, tapez **q**.
 
-La commande **man** fonctionne avec toutes les autres commandes du système, abusez de cette commande, elle sera la meilleur source de vérité à votre disposition !
+La commande **man** fonctionne avec toutes les autres commandes du système, abusez de cette commande, elle sera la meilleure source de vérité à votre disposition !
 
 Pour vous déplacer dans l'arborescence, utiliser la commande:
 
@@ -312,9 +312,69 @@ sudo <commande>
 
 ### Creation d'utilisateur
 
-Dans chaque village Gaulois, il y a un chef: abraracourcix
+Dans chaque village Gaulois, il y a un chef: **abraracourcix**
 
-Nous allons donc créé abraracourcix:
 ```
-sudo adduser
+sudo adduser abraracourcix
 ```
+Si vous essayez de vous connecter sur le compte d'Abraracourcix, vous ne pouvez pas car il n'y a pas de mot de passe.
+Pour définir un mot de passe, on utilise les droits admins et passwd:
+
+```
+sudo passwd abraracourcix
+```
+> Je vous laisse choisir le mot de passe, en cas d'oublie, refaites la commande précédente.
+
+> Si vous avez le message "BAD PASSWORD: The password is shorter than 8 characters", vous pouvez continuer a retaper le mot de passe.
+
+Nous allons faire aussi **panoramix**
+
+```
+sudo adduser panoramix
+```
+
+Je vous laisse définir un mot de passe pour panoramix.
+
+Panoramix est un druide, il a donc son groupe.
+
+```
+sudo groupadd druide
+```
+
+Pour ajouter panoramix dans son groupe:
+
+```
+sudo usermod -a -G druide panoramix
+```
+
+Maintenant que le village est complet, il faut trois emplacements pour nos personnages:
+ - le camp (pour cesar)
+ - la forêt (pour panoramix)
+ - le village (pour les gaulois)
+
+Nous allons faire trois dossiers dans le dossier /gaule:
+
+```
+sudo mkdir -p /gaule/foret /gaule/village /gaule/camp
+```
+
+Puis pour affecter les droits:
+
+```
+sudo chown cesar /gaule/camp
+```
+
+```
+sudo chown panoramix /gaule/foret
+```
+
+> La commande chown change le propriétaire du fichier/dossier !
+
+On le fait avec un groupe:
+
+```
+sudo chgrp gaulois /gaule/village
+```
+> Attention, si les gaulois veulent écrire des fichiers dans leur espace, il faut donner les droits d'écritures !
+
+Si vous faites **ls -l /gaule**, vous voyez que les propriétaires et groupes ont changé.
