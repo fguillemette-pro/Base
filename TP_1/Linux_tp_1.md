@@ -411,3 +411,4 @@ Q6: Je veux interdire l'accès à tout le monde à mon camp romain sauf à Césa
 
 </details>
 
+Vous venez de terminer le premier TP, si vous voulez un avant gout de la [session](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/) de [demain](https://librecours.net/module/sr/linux-ordinateur/logs.xhtml).
