@@ -70,7 +70,7 @@ Puis à la fin du fichier:
 ```
 
 ### Step 8
-Refaire **en script** les étapes 5,6 et 7 pour dallas
+Refaire **en script** les étapes 5, 6 et 7 pour dallas
 
 ### Step 9
 Compléter le script fait à l'étape 8 avec la création de l'utilisateur leeloo
