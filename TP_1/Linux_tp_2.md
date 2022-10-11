@@ -73,4 +73,10 @@ Puis à la fin du fichier:
 Refaire **en script** les étapes 5,6 et 7 pour dallas
 
 ### Step 9
-Complété le script fait à l'épate 8 avec la création de l'utilisateur lilou
+Compléter le script fait à l'étape 8 avec la création de l'utilisateur leeloo
+
+### Step 10
+Variabiliser le script pour automatiser la création d'un user en argument.
+
+Exemple: ./create_web_dir_user.sh Cornelius
+> Utiliser la variable $1 pour retrouver l'argument
