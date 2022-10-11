@@ -40,9 +40,14 @@ sudo systemctl restart httpd
 
 Félicitation, vous êtes hebergeur web !
 
+### Step 4.2
+
+Avec les commandes ps, grep et cut, afficher le PID du serveur http.
+
 ### Step 5
 
 Depuis le log d'apache (votre serveur http), récupérer les accèes consernant korben dans un fichier nommé /home/korben/korben_web.log. (ce fichier doit être accessible à korben)
+
 
 ### Step 6
 
@@ -68,6 +73,7 @@ Puis à la fin du fichier:
 ```
 * * * * * /home/korben/get_log_korben.sh >/dev/null 2>&1
 ```
+> [Si vous voulez en savoir plus sur le crontab](https://crontab-generator.org/)
 
 ### Step 8
 Refaire **en script** les étapes 5, 6 et 7 pour dallas
@@ -80,3 +86,4 @@ Variabiliser le script pour automatiser la création d'un user en argument.
 
 Exemple: ./create_web_dir_user.sh Cornelius
 > Utiliser la variable $1 pour retrouver l'argument
+
