@@ -3,10 +3,10 @@ marp: true
 class:
   - invert
 paginate: true
-background: https://img.icons8.com/material/480/linux.png
+background: img/linux.png
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Formation Linux N1
 ## Into the shell
@@ -14,13 +14,13 @@ background: https://img.icons8.com/material/480/linux.png
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Qu'attendez-vous de cette formation ?
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Sommaire
 - Histoire de Linux
@@ -35,7 +35,7 @@ background: https://img.icons8.com/material/480/linux.png
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Histoire
 - Projet d’un étudiant (Linus Torvalds)
@@ -48,7 +48,7 @@ background: https://img.icons8.com/material/480/linux.png
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Introduction OS
 Linux est le noyau (gestion des périphériques)
@@ -57,7 +57,7 @@ GNU/Linux pour l’ensemble (OS)
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Les distributions 1/2
 
@@ -72,7 +72,7 @@ Distributions spécialisées :
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # Les distributions 2/2
 
@@ -83,7 +83,7 @@ Pourquoi RockyLinux ?
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # La philosophie
 
@@ -93,7 +93,7 @@ Tous les éléments du système ont une représentation sous forme de fichier (L
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # L’arborescence 1/4
 
@@ -103,7 +103,7 @@ Filesystem Hierarchy Standard (FHS)
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # L’arborescence 2/4
 
@@ -111,7 +111,7 @@ image
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # L’arborescence 3/4
 
@@ -121,7 +121,7 @@ Les partitions seront suffixées par un numéro (sda1, sda2, sda3, …)
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # L’arborescence 4/4
 
@@ -133,7 +133,7 @@ Vous pouvez mixer les FS en fonction de vos besoins.
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # La ligne de commande
 
@@ -144,7 +144,7 @@ Les programmes externes (mkdir, …)
 
 ---
 
-![bg](https://img.icons8.com/material/480/linux.png)
+![bg](img/linux.png)
 
 # La ligne de commande
 
