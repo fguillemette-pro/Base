@@ -156,3 +156,50 @@ Les programmes externes (mkdir, …)
 - -s, -1, -a, --help, --verbose
 - /chemin/dossier/fichier
 
+---
+
+![bg](img/linux.png)
+
+# Gestion des permissions
+
+Les commandes importantes :
+* chmod pour changer les droits
+* chown pour changer le propriétaire d’un fichier/dossier
+* chgrp pour changer le groupe d’un fichier/dossier
+
+---
+
+![bg](img/linux.png)
+
+# Les utilisateurs
+
+* Un login (sans caractères spéciaux)
+* Un mot de passe (mais ce n’est pas obligatoire)
+* Un home (/home/<login>)
+* La liste des utilisateurs dans /etc/passwd et /etc/shadow
+* Un utilisateur est limité par défaut
+* Une application peut s’exécuter dans un compte utilisateur
+
+
+---
+
+![bg](img/linux.png)
+
+# L'administrateur
+
+* un seul admin : root
+* A tous les droits par défaut
+* Travailler sous root n’est une bonne idée
+* la commande sudo permet à un utilisateur de faire des commandes “root”
+
+---
+
+![bg](img/linux.png)
+
+# Sortez le SSH
+* login: padawan
+* mdp: Secure!1
+* Port: 22
+* IP dans le discord
+<h2><center> GL HF </center></h2>
+
