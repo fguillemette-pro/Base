@@ -429,4 +429,22 @@ Q6: Je veux interdire l'accès à tout le monde à mon camp romain sauf à Césa
 
 </details>
 
+## Conclusion
+
 Vous venez de terminer le premier TP, si vous voulez un avant gout de la [session](https://www.cyberciti.biz/faq/show-all-running-processes-in-linux/) de [demain](https://librecours.net/module/sr/linux-ordinateur/logs.xhtml).
+
+## Vous êtes encore la ?
+
+Quelques tips pour aller plus vite sous du bash:
+
+* **ctrl + r** pour faire des recherches dans votre historique de commande
+
+* **alias** pour raccourcir des commandes
+
+* **!$** permet de reutiliser des arguments
+ 
+* **cd ..** permet de revenir au repertoire parent
+
+* **cd -** permet de revenir au repertoire précedent
+
+* Des softs sympas: tree, htop, tmux
