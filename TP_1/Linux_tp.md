@@ -7,7 +7,7 @@ Pour la réalisation de ce TP, il vous faut un client SSH:
 
 Assurez-vous d'avoir une connexion à internet non filtrée (dans le cas ou vous faites le TP depuis le poste de votre client)
 
-## Initialisation
+## [K2] Initialisation
 
 Pour vous connecter sur votre machine, il vous faut 3 éléments:
 
@@ -30,19 +30,19 @@ Exemple avec Putty:
 
 ## Welcome to the machine
 
-### L'arborescence
+### [K2,K4] L'arborescence
 
 Par défaut, le répertoire utilisé sera votre *home*.
 
 Le *home* est votre espace personnel. Il se situe dans:
 
-```
+```bash
 /home/[votre login]
 ```
 
 Pour connaitre votre emplacement dans l'arborescence, tapez la commande suivante:
 
-```
+```bash
 pwd
 ```
 
@@ -50,20 +50,20 @@ pwd
 
 Pour lister les fichiers et les repertoires, tapez la commande:
 
-```
+```bash
 ls
 ```
 
 Cette commande peut se combiner avec des options comme -al (-a + -l), comme ceci:
 
-```
+```bash
 ls -al
 ```
 > La commande **ls -al** affiche les fichiers et dossiers **cachés** et **des informations supplémentaires** dans le répertoire courant.
 
 Vous pouvez préciser le répertoire ou la commande s'execute, par exemple:
 
-```
+```bash
 ls -al /etc/
 ```
 > La commande **ls** s'execute dans le répertoire **/etc/** avec **les options -al**.
@@ -71,7 +71,7 @@ ls -al /etc/
 
 Pour retrouver toutes les options possibles, vous pouvez utiliser cette commande avec man:
 
-```
+```bash
 man ls
 ```
 Pour quitter le manuel, tapez **q**.
@@ -80,13 +80,13 @@ La commande **man** fonctionne avec toutes les autres commandes du système, abu
 
 Pour vous déplacer dans l'arborescence, utiliser la commande:
 
-```
+```bash
 cd [votre chemin]
 ``` 
 
 Exemple:
 
-```
+```bash
 cd /etc/
 ```
 
@@ -98,13 +98,13 @@ Il existe de nombreux outils pour lire et éditer les fichiers sous Linux.
 
 la commande la plus simple pour lire un fichier est la commande **cat**:
 
-```
+```bash
 cat /chemin/du/fichier
 ```
 
 Exemple:
 
-```
+```bash
 cat /var/log/dnf.log
 ```
 
@@ -112,7 +112,7 @@ La commande **cat** affiche le contenu du fichier directement dans le terminal.
 
 Il existe la commande **less** qui permet de "naviger" dans le fichier de manière plus simple.
 
-```
+```bash
 less /var/log/dnf.log
 ```
 
@@ -122,19 +122,19 @@ less /var/log/dnf.log
 
 Vous pouvez lire des fichiers cachés (tant que vous avez les permissions):
 
-```
+```bash
 cat /.top_secret/primes_2022.txt
 ```
 
 Pour créer un fichier, la commande **touch** sera votre amie:
 
-```
+```bash
 touch /chemin/de/votre/fichier
 ```
 
 Exemple:
 
-```
+```bash
 touch ~/hello_world.txt
 ```
 
@@ -142,11 +142,11 @@ touch ~/hello_world.txt
 
 La création de répertoire est très similaire à la création de fichier:
 
-```
+```bash
 mkdir /chemin/du/dossier
 ```
 Exemple:
-```
+```bash
 mkdir ~/nouveau_dossier
 ```
 > Utilisez l'option -p pour créer les dossiers de votre répertoire.
@@ -156,7 +156,7 @@ mkdir ~/nouveau_dossier
 Vim est un éditeur de fichier qui à lui tout seul pourrait faire l'objet d'un cour de 6h, donc nous irons à l'essentiel.
 
 Pour ouvrir un fichier sous vim:
-```
+```bash
 vim ~/config.txt
 ```
 Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
@@ -168,13 +168,31 @@ Pour **enregistrer et quitter Vim**, Faites d'abord **echap**, puis tapez **:wq*
 Une commande bien dangereuse est la commande **rm**, elle efface dossiers et fichiers:
 
 Pour un fichier:
-```
+```bash
 rm ~/hello_world.txt
 ```
 
 Pour un repertoire:
-```
+```bash
 rm -r ~/nouveau_dossier
+```
+
+### La copie de fichiers et de repertoires
+
+Pour copier un fichier, utilisez la commande **cp**:
+
+```bash
+cp /chemin/source /chemin/cible
+```
+
+> vous pouvez changer le nom du fichier en sortie pour faire une backup, exemple : cp /ma/config.txt /ma/config.txt.backup
+
+### Le déplacement et renommer de fichiers et de repertoires
+
+Pour déplacer et/ou renommer un fichier, utilisez la commande **mv**:
+
+```bash
+mv /chemin/source /chemin/cible
 ```
 
 ### Challenge me !
@@ -219,7 +237,7 @@ Q3: Supprimez le repertoire *tp_01* en une commande
 
 Pour cette partie, vous allez faire un fichier **config.txt** dans */tmp*
 
-```
+```bash
 touch /tmp/config.txt
 ```
 > Le dossier */tmp* est un repertoire temporaire qui sera vidé à chaque redémarrage de la machine.
@@ -243,14 +261,14 @@ Les autres (utilisateurs) du fichier a le droit de lecture (mais pas les droits 
 
 Pour vous donnez le droit d'execution, faites la commande suivante:
 
-```
+```bash
 chmod u+x /tmp/config.txt
 ```
 > **u** correspond au **U**ser, **+** à **l'affectation** et **x** au droit d'**eXecution**
 
 OU
 
-```
+```bash
 chmod 764 /tmp/config.txt
 ```
 
@@ -278,14 +296,14 @@ cesar a son propre groupe: romain
 
 Pour connaitre le groupe d'un d'utilisateur:
 
-```
+```bash
 groups <user>
 ```
 > A noter qu'un utilisateur a son propre groupe (du même nom).
 
 Pour passer d'un utilsateur à un autre, tapez:
 
-```
+```bash
 su <login>
 ```
 Pour fermer la session:
@@ -314,13 +332,13 @@ sudo <commande>
 
 Dans chaque village Gaulois, il y a un chef: **abraracourcix**
 
-```
+```bash
 sudo adduser abraracourcix
 ```
 Si vous essayez de vous connecter sur le compte d'Abraracourcix, vous ne pouvez pas car il n'y a pas de mot de passe.
 Pour définir un mot de passe, on utilise les droits admins et passwd:
 
-```
+```bash
 sudo passwd abraracourcix
 ```
 > Je vous laisse choisir le mot de passe, en cas d'oublie, refaites la commande précédente.
@@ -329,7 +347,7 @@ sudo passwd abraracourcix
 
 Nous allons faire aussi **panoramix**
 
-```
+```bash
 sudo adduser panoramix
 ```
 
@@ -337,13 +355,13 @@ Je vous laisse définir un mot de passe pour panoramix.
 
 Panoramix est un druide, il a donc son groupe.
 
-```
+```bash
 sudo groupadd druide
 ```
 
 Pour ajouter panoramix dans son groupe:
 
-```
+```bash
 sudo usermod -a -G druide panoramix
 ```
 
@@ -354,13 +372,13 @@ Maintenant que le village est complet, il faut trois emplacements pour nos perso
 
 Nous allons faire trois dossiers dans le dossier /gaule:
 
-```
+```bash
 sudo mkdir -p /gaule/foret /gaule/village /gaule/camp
 ```
 
 Puis pour affecter les droits:
 
-```
+```bash
 sudo chown cesar /gaule/camp
 ```
 
@@ -368,11 +386,11 @@ sudo chown cesar /gaule/camp
 
 On le fait avec un groupe:
 
-```
+```bash
 sudo chgrp gaulois /gaule/village
 ```
 
-```
+```bash
 sudo chgrp druide /gaule/foret
 ```
 
