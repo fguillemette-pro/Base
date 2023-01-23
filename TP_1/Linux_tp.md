@@ -157,7 +157,7 @@ Vim est un éditeur de fichier qui à lui tout seul pourrait faire l'objet d'un 
 
 Pour ouvrir un fichier sous vim:
 ```bash
-vim ~/config.txt
+vi ~/config.txt
 ```
 Par défaut, vous êtes en lecture seul, pour éditer le fichier, tapez **i**.
 
