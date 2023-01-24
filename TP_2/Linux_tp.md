@@ -16,9 +16,25 @@ Vérifier son bon fonctionnement en allant sur l'adresse IP de votre machine.
 
 Modifier le fichier index.html pour mettre votre nom/prénom/pseudo.
 
+<details>
+    <summary>Solution</summary>
+    
+    sudo vim /var/www/html/index.html
+
+</details>
+
+
 ### Step 3
 
 Créer 2 utilisateurs (korben,dallas).
+
+<details>
+    <summary>Solution</summary>
+
+    sudo adduser korben
+    sudo adduser dallas
+
+</details>
 
 ### Step 4
 
