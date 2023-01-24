@@ -42,6 +42,8 @@ sudo systemctl restart httpd
 - Donner les droits 755 aux dossiers public_html
 - Faites un fichier index.html avec un hello world dans public_html
 
+Pour tester les espaces utilisateurs, dans votre navigateur, faites un http://votre-ip/~korben/
+
 Félicitation, vous êtes hebergeur web !
 
 ### Step 4.2
