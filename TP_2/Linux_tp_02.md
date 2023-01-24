@@ -67,8 +67,10 @@ mv /etc/fail2ban/jail.d/00-firewalld.conf /etc/fail2ban/jail.d/00-firewalld.loca
 Pour appliquer les changements:
 
 ```bash
-systemctl restart fail2ban
+systemctl restart fail2ban && sl
 ```
+
+Si un train vient de passer, tu devrais faire attention à tes copiers/collers
 
 Vérifier que votre service est bien redémarré (systemctl status).
 
@@ -123,3 +125,4 @@ fail2ban-client unban [IP]
 ```
 
 Félicitation, vous avez protégé votre serveur SSH des bots
+
