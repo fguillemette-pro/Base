@@ -64,11 +64,26 @@ Félicitation, vous êtes hebergeur web !
 
 ### Step 4.2
 
-Avec les commandes ps, grep et cut, afficher le PID du serveur http.
+Avec les commandes ps, grep et cut, afficher le PID du serveur http (PID le plus petit).
 
-### Step 5
+<details>
+    <summary>Solution</summary>
+
+    ps -aux | grep httpd | grep -v grep | grep root | awk '{print $2}'
+
+</details>
+
+### Step 5  
 
 Depuis le log d'apache (votre serveur http), récupérer les accèes consernant korben dans un fichier nommé /home/korben/korben_web.log. (ce fichier doit être accessible à korben).
+
+<details>
+    <summary>Solution</summary>
+
+    cat /var/log/httpd/access_log | grep "GET /~korben HTTP/1.1" > /home/korben/korben_web
+    chown korben home/korben/korben_web
+
+</details>
 
 ### Step 6
 
