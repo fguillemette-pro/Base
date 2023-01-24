@@ -46,7 +46,7 @@ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 vim /etc/fail2ban/jail.local
 ```
 
-En dessous de la section [DEFAULT], vous voyez trois valeurs:
+En dessous de la section [DEFAULT], vous saisissez/décommentez trois valeurs:
 
 * Le temps de bannissement (bantime)
 * La période entre les essaies (findtime)
